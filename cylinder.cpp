@@ -5,5 +5,6 @@
 #include "cylinder.h"
 
 cylinder::cylinder(const std::string &color, double height, double radius)
-:circle(color, radius), height(height), radius(radius)  { }
-double cylinder::getArea() const { return shape::getArea() * height ; }
+:circle(color, radius), height(height)  { }
+
+double cylinder::getVolume() const { return getArea() * height ; }

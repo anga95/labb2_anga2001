@@ -2,12 +2,23 @@
 #include "shape.h"
 #include "circle.h"
 #include "cylinder.h"
+#include "rectangle.h"
+#include "parallelepiped.h"
+
 int main() {
 
-    circle c("gulful", 5);
-    std::cout << c.getArea()  << " " << c.getColor();
-    std::cout << std::endl;
-    cylinder cyl("green", 10, 5);
+    circle circle("gulful", 10);
+    std::cout << "circle "<<circle.getArea() << " " << circle.getColor()<< "\n";
+
+    cylinder cylinder("green", 10, 10);
+    std::cout <<"cylinder "<< cylinder.getVolume() << " " << cylinder.getColor()<< "\n";
+
+    rectangle rekt("blue", 5, 5);
+    std::cout <<"rekt "<< rekt.getArea()<< " " << rekt.getColor()<< "\n";
+
+    parallelepiped par("grönsomfan", 5,5,5);
+    std::cout <<"parallellepiped "<< par.getVolume()<< " " << par.getColor()<< "\n";
+
 
     return 0;
 }

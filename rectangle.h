@@ -11,7 +11,7 @@
 class rectangle: public shape {
 public:
     rectangle(const std::string &color, double height, double length);
-
+    virtual double getArea() const;
 public:
 
 private:

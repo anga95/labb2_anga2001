@@ -6,6 +6,6 @@
 
 const std::string &shape::getColor() const { return color; }
 
-//double shape::getArea() const { return area; }
+//double shape::getVolume() const { return 0; }
 
 shape::shape(const std::string &color) : color(color) {}

@@ -9,14 +9,13 @@
 #include "circle.h"
 #include "shape.h"
 
-class cylinder: public circle, public shape{
+class cylinder: public circle{
 public:
     cylinder(const std::string &color, double height, double radius);
-    double getArea() const;
+    double getVolume() const;
 
 private:
     double height;
-    double radius;
 };
 
 
