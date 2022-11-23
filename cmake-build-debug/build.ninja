@@ -82,6 +82,12 @@ build CMakeFiles/labb2_anga2001.dir/parallelepiped.cpp.o: CXX_COMPILER__labb2_an
   OBJECT_DIR = CMakeFiles/labb2_anga2001.dir
   OBJECT_FILE_DIR = CMakeFiles/labb2_anga2001.dir
 
+build CMakeFiles/labb2_anga2001.dir/rounded_rectangle.cpp.o: CXX_COMPILER__labb2_anga2001_Debug /Users/andreas/Documents/MIUN/programmeringsmetodik/labborationer/labb2_anga2001/rounded_rectangle.cpp || cmake_object_order_depends_target_labb2_anga2001
+  DEP_FILE = CMakeFiles/labb2_anga2001.dir/rounded_rectangle.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/labb2_anga2001.dir
+  OBJECT_FILE_DIR = CMakeFiles/labb2_anga2001.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target labb2_anga2001
@@ -90,7 +96,7 @@ build CMakeFiles/labb2_anga2001.dir/parallelepiped.cpp.o: CXX_COMPILER__labb2_an
 #############################################
 # Link the executable labb2_anga2001
 
-build labb2_anga2001: CXX_EXECUTABLE_LINKER__labb2_anga2001_Debug CMakeFiles/labb2_anga2001.dir/main.cpp.o CMakeFiles/labb2_anga2001.dir/shape.cpp.o CMakeFiles/labb2_anga2001.dir/circle.cpp.o CMakeFiles/labb2_anga2001.dir/cylinder.cpp.o CMakeFiles/labb2_anga2001.dir/rectangle.cpp.o CMakeFiles/labb2_anga2001.dir/parallelepiped.cpp.o
+build labb2_anga2001: CXX_EXECUTABLE_LINKER__labb2_anga2001_Debug CMakeFiles/labb2_anga2001.dir/main.cpp.o CMakeFiles/labb2_anga2001.dir/shape.cpp.o CMakeFiles/labb2_anga2001.dir/circle.cpp.o CMakeFiles/labb2_anga2001.dir/cylinder.cpp.o CMakeFiles/labb2_anga2001.dir/rectangle.cpp.o CMakeFiles/labb2_anga2001.dir/parallelepiped.cpp.o CMakeFiles/labb2_anga2001.dir/rounded_rectangle.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
   OBJECT_DIR = CMakeFiles/labb2_anga2001.dir
   POST_BUILD = :

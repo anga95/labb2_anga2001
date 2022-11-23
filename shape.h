@@ -11,11 +11,8 @@
 class shape {
 public:
     shape(const std::string &color);
-
     const std::string &getColor() const;
-
     virtual double getArea() const = 0;
-
 private:
     std::string color;
 };

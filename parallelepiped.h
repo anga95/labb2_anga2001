@@ -11,7 +11,7 @@
 class parallelepiped: public rectangle{
 public:
     parallelepiped(const std::string &color, double height, double length, double depth);
-    double getVolume() const;
+    double getArea() const;
 private:
     double depth;
 };

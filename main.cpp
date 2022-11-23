@@ -4,6 +4,7 @@
 #include "cylinder.h"
 #include "rectangle.h"
 #include "parallelepiped.h"
+#include "rounded_rectangle.h"
 
 int main() {
 
@@ -17,8 +18,9 @@ int main() {
     std::cout <<"rekt "<< rekt.getArea()<< " " << rekt.getColor()<< "\n";
 
     parallelepiped par("grönsomfan", 5,5,5);
-    std::cout <<"parallellepiped "<< par.getVolume()<< " " << par.getColor()<< "\n";
+    std::cout << "parallellepiped " << par.getArea() << " " << par.getColor() << "\n";
 
-
+    rounded_rectangle round("red",5,10,2);
+    std::cout <<"round "<< round.getArea()<< " " << "\n";
     return 0;
 }

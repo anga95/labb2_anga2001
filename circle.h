@@ -12,7 +12,7 @@ class circle: public shape {
 public:
     circle(const std::string &color, double radius);
     virtual double getArea() const ;
-private:
+protected:
     double radius;
 };
 
