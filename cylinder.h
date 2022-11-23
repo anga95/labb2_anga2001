@@ -12,7 +12,7 @@
 class cylinder: public circle{
 public:
     cylinder(const std::string &color, double height, double radius);
-    double getVolume() const;
+    double getArea() const;
 
 private:
     double height;

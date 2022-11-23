@@ -8,8 +8,11 @@ parallelepiped::parallelepiped(const std::string &color, double height, double l
     : rectangle(color, height, length), depth(depth) {}
 
 double parallelepiped::getArea() const {
-    rectangle upAndDown("null", length, depth);
-    rectangle side("null", height, depth);
+    rectangle upArea("null", length, depth);
+    rectangle sideArea("null", height, depth);
+    double frontAndBack = 2*rectangle::getArea();
+    double upAndDown = 2*upArea.getArea();
+    double sides = 2*sideArea.getArea();
 
-    return 2*(rectangle::getArea() + upAndDown.getArea() + side.getArea());
+    return frontAndBack + upAndDown + sides;
 }

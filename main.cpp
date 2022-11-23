@@ -12,7 +12,7 @@ int main() {
     std::cout << "circle "<<circle.getArea() << " " << circle.getColor()<< "\n";
 
     cylinder cylinder("green", 10, 10);
-    std::cout <<"cylinder "<< cylinder.getVolume() << " " << cylinder.getColor()<< "\n";
+    std::cout << "cylinder " << cylinder.getArea() << " " << cylinder.getColor() << "\n";
 
     rectangle rekt("blue", 5, 5);
     std::cout <<"rekt "<< rekt.getArea()<< " " << rekt.getColor()<< "\n";
@@ -21,6 +21,6 @@ int main() {
     std::cout << "parallellepiped " << par.getArea() << " " << par.getColor() << "\n";
 
     rounded_rectangle round("red",5,10,2);
-    std::cout <<"round "<< round.getArea()<< " " << "\n";
+    std::cout <<"round "<< round.getArea()<< " " << round.getColor() +"\n";
     return 0;
 }
