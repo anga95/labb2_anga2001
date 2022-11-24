@@ -6,25 +6,26 @@
 #include "rectangle.h"
 #include "parallelepiped.h"
 #include "rounded_rectangle.h"
-void f(std::vector<shape*> &vec){
+void getData(const std::vector<shape*> &vec){
     for (auto &item  : vec) {
-        std::cout << item->getColor() << "\t" << item->getArea() << "\n";
+        std::cout <<"-"<<typeid(*item).name()
+        <<"\n Color["<< item->getColor() << "] Area: [" << item->getArea() << "]\n\n";
     }
-
 }
 int main() {
-    //f();
     circle circle("gulful", 10);
-    cylinder cylinder("green", 10, 10);
-    rectangle rekt("blue", 10, 10);
-    parallelepiped par("grönsomfan", 10,10,10);
-    rounded_rectangle round("red",10,10,10);
+    cylinder cylinder("genomskinlig", 10, 10);
+    rectangle rekt("blåttflått", 10, 10);
+    parallelepiped par("gröntskönt", 10,10,10);
+    rounded_rectangle round("röttsött",10,10,10);
+
     std::vector<shape*> vec(5,nullptr);
     vec[0] = &circle;
     vec[1] = &cylinder;
     vec[2] = &rekt;
     vec[3] = &par;
     vec[4] = &round;
+    getData(vec);
 
 
 
