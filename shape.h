@@ -5,7 +5,6 @@
 #ifndef LABB2_ANGA2001_SHAPE_H
 #define LABB2_ANGA2001_SHAPE_H
 
-
 #include <string>
 
 class shape {
@@ -13,6 +12,7 @@ public:
     shape(const std::string &color);
     const std::string &getColor() const;
     virtual double getArea() const = 0;
+    virtual ~shape() = default;
 private:
     std::string color;
 };

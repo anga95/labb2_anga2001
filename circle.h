@@ -4,14 +4,12 @@
 
 #ifndef LABB2_ANGA2001_CIRCLE_H
 #define LABB2_ANGA2001_CIRCLE_H
-
-
 #include "shape.h"
 
-class circle: public shape {
+class circle: virtual public shape {
 public:
     circle(const std::string &color, double radius);
-    virtual double getArea() const ;
+    double getArea() const ;
 protected:
     double radius;
 };

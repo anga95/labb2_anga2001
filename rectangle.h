@@ -5,13 +5,12 @@
 #ifndef LABB2_ANGA2001_RECTANGLE_H
 #define LABB2_ANGA2001_RECTANGLE_H
 
-
 #include "shape.h"
 
-class rectangle: public shape {
+class rectangle: virtual public shape {
 public:
     rectangle(const std::string &color, double height, double length);
-    virtual double getArea() const;
+    double getArea() const;
 
 protected:
     double height;

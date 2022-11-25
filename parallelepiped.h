@@ -5,7 +5,6 @@
 #ifndef LABB2_ANGA2001_PARALLELEPIPED_H
 #define LABB2_ANGA2001_PARALLELEPIPED_H
 
-
 #include "rectangle.h"
 
 class parallelepiped: public rectangle{

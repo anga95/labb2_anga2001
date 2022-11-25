@@ -9,15 +9,16 @@
 void getData(const std::vector<shape*> &vec){
     for (auto &item  : vec) {
         std::cout <<"-"<<typeid(*item).name()
-        <<"\n Color["<< item->getColor() << "] Area: [" << item->getArea() << "]\n\n";
+        <<"\n Color["<< item->getColor() << "] Area[" << item->getArea() << "]\n\n";
     }
 }
+
 int main() {
     circle circle("gulful", 10);
     cylinder cylinder("genomskinlig", 10, 10);
     rectangle rekt("blåttflått", 10, 10);
     parallelepiped par("gröntskönt", 10,10,10);
-    rounded_rectangle round("röttsött",10,10,10);
+    rounded_rectangle round("röttsött" ,10,10,10);
 
     std::vector<shape*> vec(5,nullptr);
     vec[0] = &circle;
@@ -26,12 +27,6 @@ int main() {
     vec[3] = &par;
     vec[4] = &round;
     getData(vec);
-
-
-
-
-
-
 
     return 0;
 }

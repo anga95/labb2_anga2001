@@ -5,9 +5,8 @@
 #ifndef LABB2_ANGA2001_CYLINDER_H
 #define LABB2_ANGA2001_CYLINDER_H
 
-
 #include "circle.h"
-#include "shape.h"
+//#include "shape.h"
 
 class cylinder: public circle{
 public:
